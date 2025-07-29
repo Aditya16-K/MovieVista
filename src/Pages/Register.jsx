@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Register = () => {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   return (
     <div className="w-full h-screen flex justify-center items-center bg-gray-950 overflow-hidden px-4">
       <div className="relative bg-gray-800/80 backdrop-blur-md border border-green-500/20 rounded-xl shadow-xl px-5 py-6 sm:px-6 sm:py-8 md:px-8 md:py-10 w-full max-w-[350px] sm:max-w-[400px] group transition-transform duration-500 hover:scale-[1.02]">
