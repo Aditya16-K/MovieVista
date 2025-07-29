@@ -11,13 +11,9 @@ const Register = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-screen flex justify-center items-center text-white px-4 sm:px-6 md:px-8 lg:px-10 bg-gray-950">
-      <div className="relative z-10 group transition-transform duration-500 hover:scale-[1.02] w-full max-w-sm sm:max-w-md md:max-w-lg">
-        <div className="relative bg-gray-800/70 backdrop-blur-md p-6 sm:p-8 rounded-3xl shadow-xl border border-green-500/20">
-          {/* Border effects */}
-          <div className="absolute inset-0 rounded-3xl pointer-events-none border-2 border-green-500 opacity-30 animate-pulse group-hover:opacity-50 transition duration-500"></div>
-          <div className="absolute inset-0 rounded-3xl pointer-events-none border border-green-400 blur-sm opacity-20 group-hover:opacity-40 transition duration-500"></div>
-
+    <div className="w-full min-h-screen flex justify-center items-center text-white px-4 sm:px-6 md:px-8 lg:px-10 bg-gray-950 ">
+      <div className="relative z-10 group transition-transform duration-500 hover:scale-[1.02] w-full max-w-sm sm:max-w-md md:max-w-lg ">
+        <div className="relative bg-gray-800/70 backdrop-blur-md p-6 sm:p-8 rounded-3xl shadow-xl border border-green-500/20 mb-45">
           {/* Logo */}
           <div className="text-center mb-4 sm:mb-6">
             <span className="text-green-400 font-bold text-2xl sm:text-3xl tracking-widest">
@@ -31,7 +27,7 @@ const Register = () => {
           </h2>
 
           {/* Form */}
-          <form className="space-y-4 sm:space-y-5">
+          <form className="space-y-4 sm:space-y-5 ">
             {/* Name */}
             <div className="relative">
               <FaUser className="absolute top-3 left-3 text-green-400 text-sm sm:text-base" />
