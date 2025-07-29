@@ -1,15 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Register = () => {
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, []);
-
   return (
     <div className="w-full min-h-screen flex justify-center items-center text-white px-4 sm:px-6 md:px-8 lg:px-10 bg-gray-950 ">
       <div className="relative z-10 group transition-transform duration-500 hover:scale-[1.02] w-full max-w-sm sm:max-w-md md:max-w-lg ">
@@ -27,7 +20,7 @@ const Register = () => {
           </h2>
 
           {/* Form */}
-          <form className="space-y-4 sm:space-y-5 ">
+          <form className="space-y-4 sm:space-y-5 sm:mb-15">
             {/* Name */}
             <div className="relative">
               <FaUser className="absolute top-3 left-3 text-green-400 text-sm sm:text-base" />
