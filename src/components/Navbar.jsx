@@ -50,8 +50,6 @@ const Navbar = () => {
           aria-label="Homepage"
         >
           <img src={newlogo} className="h-14 w-auto" alt="Logo" />
-          {/* Optional: Add brand name text if want */}
-          {/* <span className="text-lg font-bold text-green-400 select-none">MovieZone</span> */}
         </Link>
 
         {/* Search Center (desktop only) */}
